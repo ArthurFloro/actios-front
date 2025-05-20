@@ -43,11 +43,11 @@ export function Header() {
 
       <div className="flex items-center gap-4 mr-4">
         <TrocarTema />
-        <Button className="flex cursor-pointer border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
+        <Button className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
           <CalendarCheck2 />
           <h1>Meus eventos</h1>
         </Button>
-        <Button className="flex cursor-pointer border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
+        <Button className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
           <Ticket />
           <h1>Meus ingressos</h1>
         </Button>

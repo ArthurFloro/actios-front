@@ -35,7 +35,7 @@ export const TechEvents = [
     data: "27 de Novembro de 2025",
     hora: "10:30",
     image:
-      "https://jundiai.sp.gov.br/noticias/wp-content/uploads/sites/32/2021/10/bannersemana-960x960.jpeg",
+      "https://assets.spaceappschallenge.org/media/original_images/Image1_CxfOBYv.png",
     avatar:
       "https://s1.static.brasilescola.uol.com.br/be/vestibular/-5a576cd29131d.jpg",
   },
