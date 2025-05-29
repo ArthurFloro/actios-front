@@ -72,7 +72,7 @@ export default function Cadastro() {
   }
 
   return (
-    <div>
+    <div className="p-20">
       <Logo size={180} font={3} />
 
       <Form {...form}>

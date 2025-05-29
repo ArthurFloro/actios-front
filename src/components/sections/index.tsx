@@ -22,19 +22,23 @@ export function Sections({ categoria, link, eventos }: Props) {
     <div className="p-8 space-y-8 mt-0 mb-12">
       <div className="flex items-center justify-around w-full">
         <h1 className="font-bold text-xl">{categoria}</h1>
-        <div>
-        
-        </div>
+        <div></div>
         <div className="flex font-bold gap-2 items-center justify-center">
-          <Link className="text-yellow-500 font-bold" href={link}>Veja mais</Link>
+          <Link className="text-yellow-500 font-bold" href={link}>
+            Veja mais
+          </Link>
           <div className="bg-white rounded-full p-2">
-            <ChevronRight className="text-yellow-500 cursor-pointer" size={16} />
+            <ChevronRight
+              className="text-yellow-500 cursor-pointer"
+              size={16}
+            />
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center gap-6 flex-wrap">
         {eventos.map((item) => (
           <Cards
+            id={item.id}
             key={item.id}
             nomeEvento={item.nomeEvento}
             data={item.data}

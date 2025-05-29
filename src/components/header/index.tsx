@@ -7,6 +7,7 @@ import { TrocarTema } from "../darkmode/button";
 import { Button } from "../ui/button";
 import { AvatarComponente } from "../avatar";
 import { Input } from "../ui/input";
+import { usePathname, useRouter } from "next/navigation";
 
 export function Header() {
   const [isFixed, setIsFixed] = useState(false);
@@ -20,9 +21,12 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const router = useRouter();
+  const pathname = usePathname();
+
   return (
     <header
-      className={`flex items-center justify-between p-4 w-full transition-all duration-300 z-50 ${
+      className={`flex items-center justify-between  p-4 w-full transition-all duration-300 z-50 ${
         isFixed
           ? "fixed top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md"
           : "relative bg-transparent"
@@ -43,14 +47,27 @@ export function Header() {
 
       <div className="flex items-center gap-4 mr-4">
         <TrocarTema />
-        <Button className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
-          <CalendarCheck2 />
-          <h1>Meus eventos</h1>
-        </Button>
-        <Button className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2">
-          <Ticket />
-          <h1>Meus ingressos</h1>
-        </Button>
+
+        {pathname !== "/usuario/eventos" && (
+          <Button
+            onClick={() => router.push("/usuario/eventos")}
+            className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2"
+          >
+            <CalendarCheck2 />
+            <h1>Meus eventos</h1>
+          </Button>
+        )}
+
+        {pathname !== "/usuario/ingressos" && (
+          <Button
+            onClick={() => router.push("/usuario/ingressos")}
+            className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2"
+          >
+            <Ticket />
+            <h1>Meus ingressos</h1>
+          </Button>
+        )}
+
         <AvatarComponente src="https://github.com/shadcn.png" abreviacao="AF" />
       </div>
     </header>

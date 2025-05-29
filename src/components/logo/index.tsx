@@ -1,8 +1,9 @@
-import Image from "next/image";
 import logoWhite from "../../../public/assets/logo.png";
 import logoDark from "../../../public/assets/logo-white2.png";
+import { useRouter } from "next/navigation";
 
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 interface logoProps {
   size?: number;
@@ -14,8 +15,13 @@ export function Logo({ size = 100, font = 3 }: logoProps) {
 
   const logoSrc = theme === "dark" ? logoDark : logoWhite;
 
+  const router = useRouter();
+
   return (
-    <div className="items-center flex justify-center">
+    <div
+      onClick={() => router.push("/screens/home")}
+      className="items-center cursor-pointer flex justify-center"
+    >
       <div className="flex items-center justify-center flex-col">
         <Image src={logoSrc} alt="logo" width={size} height={size} />
         <h1 className={`font-bold text-${font}xl`}>
