@@ -1,10 +1,10 @@
 "use client";
 import { Calendar, Clock } from "lucide-react";
 import { Button } from "../ui/button";
-import { AvatarComponente } from "../avatar";
 import Image from "next/image";
 import { Separator } from "../ui/separator";
 import { useRouter } from "next/navigation";
+import { AvatarComponenteInstituicao } from "../avatar/instituição";
 
 interface Props {
   id: number;
@@ -46,11 +46,11 @@ export function Cards({ id, nomeEvento, data, hora, image, avatar }: Props) {
           <Separator />
           <div className="flex p-2 items-center justify-between">
             <div className="flex items-center gap-2">
-              <Clock className="text-yellow-500" />
+              <Clock className="text-[#fdc616]" />
               <span>{hora}</span>
             </div>
-            <div className="border-2 border-yellow-500 p-2 rounded-full">
-              <AvatarComponente src={avatar} abreviacao="AF" />
+            <div className="border-2 border-[#fdc616] p-2 rounded-full">
+              <AvatarComponenteInstituicao src={avatar} abreviacao="AF" />
             </div>
           </div>
         </div>

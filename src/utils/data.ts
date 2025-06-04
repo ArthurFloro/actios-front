@@ -11,6 +11,11 @@ export const TechEvents = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI8vI9_Y-qJrFpw2ZKSJ5PN1V3Z_pLTGLnUA&s",
     avatar:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqG-qVDiL9e1EtWzvewGWkp8YC_ovVf1lqA&s",
+    preco: 0,
+    palestrante: "João Silva",
+    especialidade: "Desenvolvimento de Software",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 2,
@@ -24,6 +29,11 @@ export const TechEvents = [
       "https://gkpb.com.br/wp-content/uploads/2017/12/novo-logo-campus-party-destaque.jpg",
     avatar:
       "https://sismf.museudofutebol.org/anexos/imagem/714904/w:420/h:420/c:1",
+    preco: 150,
+    palestrante: "Maria Oliveira",
+    especialidade: "Inovação e Tecnologia",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 3,
@@ -37,6 +47,11 @@ export const TechEvents = [
       "https://assets.spaceappschallenge.org/media/original_images/Image1_CxfOBYv.png",
     avatar:
       "https://cdn.folhape.com.br/upload/dn_arquivo/2022/05/design-sem-nome-27.jpg",
+    preco: 0,
+    palestrante: "Carlos Mendes",
+    especialidade: "Ciência e Tecnologia Espacial",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 4,
@@ -50,6 +65,11 @@ export const TechEvents = [
       "https://assets.spaceappschallenge.org/media/original_images/Image1_CxfOBYv.png",
     avatar:
       "https://s1.static.brasilescola.uol.com.br/be/vestibular/-5a576cd29131d.jpg",
+    preco: 0,
+    palestrante: "Ana Souza",
+    especialidade: "Tecnologia da Informação",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];
 
@@ -65,6 +85,11 @@ export const CorporativeEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F679d50be72c7a-xs.jpg&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/743/743007.png",
+    preco: 95,
+    palestrante: "Lucas Pereira",
+    especialidade: "Games e Entretenimento Digital",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 6,
@@ -77,6 +102,11 @@ export const CorporativeEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F673f8f78e498e-xs.png&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    preco: 120,
+    palestrante: "Fernanda Costa",
+    especialidade: "eSports e Competição Digital",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 7,
@@ -89,6 +119,11 @@ export const CorporativeEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F671bf74dd5ca8-xs.png&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/2602/2602147.png",
+    preco: 0,
+    palestrante: "Ricardo Almeida",
+    especialidade: "Desenvolvimento de Jogos",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 8,
@@ -101,6 +136,11 @@ export const CorporativeEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F6819687290771-xs.jpg&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/3194/3194731.png",
+    preco: 40,
+    palestrante: "Juliana Martins",
+    especialidade: "Competição de eSports",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];
 
@@ -116,6 +156,11 @@ export const EducationalEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F681e69cdf13b8-xs.png&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/190/190411.png",
+    preco: 0,
+    palestrante: "Ana Clara Lima",
+    especialidade: "Educação e Pesquisa Acadêmica",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 10,
@@ -128,6 +173,11 @@ export const EducationalEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F67aa2f2c7552f-xs.png&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/535/535285.png",
+    preco: 35,
+    palestrante: "Pedro Henrique Silva",
+    especialidade: "Ciências Humanas e Sociais",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 11,
@@ -140,6 +190,11 @@ export const EducationalEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F67f9974217bf2-xs.jpg&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/2942/2942875.png",
+    preco: 0,
+    palestrante: "Mariana Souza",
+    especialidade: "Ciências Naturais e Educação Científica",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 12,
@@ -152,5 +207,10 @@ export const EducationalEvents = [
     image:
       "https://discovery-next.svc.sympla.com.br/_next/image?url=https%3A%2F%2Fimages.sympla.com.br%2F671bf74dd5ca8-xs.png&w=640&q=75",
     avatar: "https://cdn-icons-png.flaticon.com/512/4350/4350051.png",
+    preco: 0,
+    palestrante: "Lucas Almeida",
+    especialidade: "Movimento Estudantil e Participação Cidadã",
+    perfilPalestranteImg:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];

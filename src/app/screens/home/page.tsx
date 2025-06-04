@@ -8,7 +8,7 @@ import { Sections } from "@/components/sections";
 import { Footer } from "@/components/footer";
 import { Separator } from "@/components/ui/separator";
 
-export default function Home() {
+export default function Menu() {
   return (
     <div>
       <Header />

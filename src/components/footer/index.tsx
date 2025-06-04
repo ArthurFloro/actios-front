@@ -9,7 +9,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bottom-0 p-12 bg-white">
+    <footer className="bottom-0 p-12">
       <div>
         <div className="flex items-center justify-center gap-4">
           <Logo font={3} />

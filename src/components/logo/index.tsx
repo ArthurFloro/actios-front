@@ -1,8 +1,8 @@
 import logoWhite from "../../../public/assets/logo.png";
-import logoDark from "../../../public/assets/logo-white2.png";
+// import logoDark from "../../../public/assets/logo-white2.png";
 import { useRouter } from "next/navigation";
 
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import Image from "next/image";
 
 interface logoProps {
@@ -11,9 +11,9 @@ interface logoProps {
 }
 
 export function Logo({ size = 100, font = 3 }: logoProps) {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
-  const logoSrc = theme === "dark" ? logoDark : logoWhite;
+  const logoSrc = logoWhite;
 
   const router = useRouter();
 

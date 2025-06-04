@@ -20,7 +20,7 @@ export default function DetalhesEvento({ params }: { params: { id: string } }) {
 
   return (
     <div>
-      <HeaderDetalhes produtor="Produtor teste" produtorContato="#" />
+      <HeaderDetalhes produtor={evento.nomeEvento} produtorContato="#" />
 
       {/* Bloco com fundo escuro e imagem borrada ao fundo */}
       <div className="relative p-12 w-full bg-black flex items-center justify-center min-h-[400px] overflow-hidden">
@@ -58,14 +58,38 @@ export default function DetalhesEvento({ params }: { params: { id: string } }) {
           />
         </div>
       </div>
-      <div className="p-8 grid grid-cols-2">
-        <div>
-          <h1 className="text-3xl font-bold">Descrição do evento</h1>
-          <p>{evento.descricao}</p>
+      <div className="p-24 grid bg-[#E7E3DB] grid-cols-2">
+        <div className="border shadow rounded-2xl bg-white flex items-center justify-center p-6">
+          <div className="flex flex-col gap-4 max-w-[600px]">
+            <h1 className="text-3xl font-bold text-yellow-500">
+              Descrição do evento
+            </h1>
+            <p className="text-gray-700 text-base leading-relaxed">
+              {evento.descricao}
+            </p>
+            <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
+              <li>
+                <strong>Data:</strong> {evento.data}
+              </li>
+              <li>
+                <strong>Local:</strong> {evento.localizacao}
+              </li>
+              <li>
+                <strong>Público-alvo:</strong> Estudantes de tecnologia
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="mr-0">
-          <IngressoCard />
-        </div>
+
+        <IngressoCard
+          nomeEvento={evento.nomeEvento}
+          dataHora={evento.data}
+          local={evento.localizacao}
+          palestrante={evento.palestrante}
+          especialidade={evento.especialidade}
+          src={evento.perfilPalestranteImg}
+          abreviacao="A"
+        />
       </div>
 
       <Footer />

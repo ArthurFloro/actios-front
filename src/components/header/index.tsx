@@ -14,7 +14,7 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsFixed(window.scrollY > 0); // se scroll > 0, ativa fixed
+      setIsFixed(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -68,7 +68,11 @@ export function Header() {
           </Button>
         )}
 
-        <AvatarComponente src="https://github.com/shadcn.png" abreviacao="AF" />
+        <AvatarComponente
+          nomePerfil="Arthur Floro"
+          src="https://github.com/ArthurFloro.png"
+          abreviacao="AF"
+        />
       </div>
     </header>
   );
