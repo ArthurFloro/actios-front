@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
-
 import {
   Select,
   SelectContent,
@@ -25,6 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { toast } from "sonner";
 
 import { useRouter } from "next/navigation";
 
@@ -67,8 +67,23 @@ export default function Cadastro() {
   const router = useRouter();
 
   function onSubmit(values: z.infer<typeof cadastroSchema>) {
-    console.log(values);
-    router.push("/screens/home");
+    if (
+      values.nome === "admin" &&
+      values.email === "admin@admin.com" &&
+      values.senha === "admin123"
+    ) {
+      toast.success("Login bem-sucedido!", {
+        description: "Clique abaixo para acessar a página inicial.",
+        action: {
+          label: "Ir para Home",
+          onClick: () => router.push("/screens/home"),
+        },
+      });
+    } else {
+      toast.error("Usuário inválido", {
+        description: "Use: nome admin, email admin@admin e senha admin123.",
+      });
+    }
   }
 
   return (

@@ -1,6 +1,5 @@
-//import Cadastro from "./auth/cadastro/page";
-import Menu from "./screens/home/page";
+import Cadastro from "./auth/cadastro/page";
 
 export default function Home() {
-  return <Menu />;
+  return <Cadastro />;
 }
