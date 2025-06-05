@@ -10,7 +10,13 @@ import { HeaderDetalhes } from "@/components/header/detalhes";
 import { CalendarRange, ChevronRight, MapPin } from "lucide-react";
 import { IngressoCard } from "@/components/cards/ingressoCard";
 
-export default function DetalhesEvento({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function DetalhesEvento({ params }: PageProps) {
   const id = Number(params.id);
 
   const allEvents = [...TechEvents, ...CorporativeEvents, ...EducationalEvents];
