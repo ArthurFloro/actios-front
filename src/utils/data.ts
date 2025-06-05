@@ -16,6 +16,7 @@ export const TechEvents = [
     especialidade: "Desenvolvimento de Software",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Tecnologia",
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const TechEvents = [
     especialidade: "Inovação e Tecnologia",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Tecnologia",
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ export const TechEvents = [
     especialidade: "Ciência e Tecnologia Espacial",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Tecnologia",
   },
   {
     id: 4,
@@ -70,6 +73,7 @@ export const TechEvents = [
     especialidade: "Tecnologia da Informação",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Tecnologia",
   },
 ];
 
@@ -90,6 +94,7 @@ export const CorporativeEvents = [
     especialidade: "Games e Entretenimento Digital",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Corporativo",
   },
   {
     id: 6,
@@ -107,6 +112,7 @@ export const CorporativeEvents = [
     especialidade: "eSports e Competição Digital",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Corporativo",
   },
   {
     id: 7,
@@ -124,6 +130,7 @@ export const CorporativeEvents = [
     especialidade: "Desenvolvimento de Jogos",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Corporativo",
   },
   {
     id: 8,
@@ -141,6 +148,7 @@ export const CorporativeEvents = [
     especialidade: "Competição de eSports",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Corporativo",
   },
 ];
 
@@ -161,6 +169,7 @@ export const EducationalEvents = [
     especialidade: "Educação e Pesquisa Acadêmica",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Educação",
   },
   {
     id: 10,
@@ -178,6 +187,7 @@ export const EducationalEvents = [
     especialidade: "Ciências Humanas e Sociais",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Educação",
   },
   {
     id: 11,
@@ -195,6 +205,7 @@ export const EducationalEvents = [
     especialidade: "Ciências Naturais e Educação Científica",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Educação",
   },
   {
     id: 12,
@@ -212,5 +223,6 @@ export const EducationalEvents = [
     especialidade: "Movimento Estudantil e Participação Cidadã",
     perfilPalestranteImg:
       "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvdG8lMjBkZSUyMHBlcmZpbHxlbnwwfHwwfHx8MA%3D%3D",
+    categoraia: "Educação",
   },
 ];

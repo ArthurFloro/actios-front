@@ -50,36 +50,47 @@ export function IngressoCard({
 
   // dentro do componente
 
+  // Dentro do componente IngressoCard
+
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+
+  // ...
+
   const registrarNoEvento = async () => {
     try {
-      // Aqui você simularia a requisição
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // simula uma requisição
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // simula requisição
 
-      const agora = new Date();
-
-      const diaSemana = agora.toLocaleString("pt-BR", { weekday: "long" });
-      const dia = agora.getDate();
-      const mes = agora.toLocaleString("pt-BR", { month: "long" });
-      const ano = agora.getFullYear();
-      const hora = agora.toLocaleTimeString("pt-BR", {
+      const dataEvento = new Date();
+      const dia = dataEvento.getDate().toString().padStart(2, "0");
+      const mes = (dataEvento.getMonth() + 1).toString().padStart(2, "0");
+      const ano = dataEvento.getFullYear();
+      const hora = dataEvento.toLocaleTimeString("pt-BR", {
         hour: "2-digit",
         minute: "2-digit",
         hour12: false,
       });
 
-      const dataFormatada = `${diaSemana}, ${dia} de ${mes} de ${ano} às ${hora}`;
+      const dataFormatada = `${dia}/${mes}/${ano}`;
 
       toast("Registrado com sucesso", {
-        description: dataFormatada,
-        action: {
-          label: "Eventos",
-          onClick: () => router.push("/usuario/eventos"),
-        },
+        description: `${dataFormatada} às ${hora}`,
       });
 
-      setOpen(false); // fecha o diálogo após sucesso
+      // envia para a página de ingresso com query params
+      router.push(
+        `/usuario/ingressos?nomeEvento=${encodeURIComponent(
+          nomeEvento
+        )}&participante=${encodeURIComponent(
+          nome
+        )}&emailParticipante=${encodeURIComponent(
+          email
+        )}&categoria=Congresso&data=${dataFormatada}&hora=${hora}&local=${encodeURIComponent(
+          local
+        )}`
+      );
     } catch (err) {
-      console.error("Erro ao registrar no evento:", err);
+      console.error("Erro ao registrar:", err);
       toast("Erro ao registrar", {
         description: "Tente novamente mais tarde.",
       });
@@ -97,9 +108,7 @@ export function IngressoCard({
         </CardHeader>
         <CardContent className="space-y-2">
           <div className="flex items-center gap-4">
-            <p className="text-sm font-semibold ">
-              {palestrante}
-            </p>
+            <p className="text-sm font-semibold ">{palestrante}</p>
             <AvatarComponenteInstituicao src={src} abreviacao={abreviacao} />
           </div>
           <p className="text-sm text-muted-foreground">
@@ -130,11 +139,22 @@ export function IngressoCard({
                 <div className="grid gap-4">
                   <div className="grid gap-3">
                     <Label htmlFor="name-1">Nome</Label>
-                    <Input id="name-1" name="name" />
+                    <Input
+                      id="name-1"
+                      name="name"
+                      value={nome}
+                      onChange={(e) => setNome(e.target.value)}
+                    />
                   </div>
                   <div className="grid gap-3">
                     <Label htmlFor="email">E-mail</Label>
-                    <Input id="username-1" name="email" type="email" />
+                    <Input
+                      id="username-1"
+                      name="email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                 </div>
                 <DialogFooter>
