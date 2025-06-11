@@ -55,7 +55,6 @@ export function IngressoUsuario() {
         </button>
       </div>
 
-
       <div className="md:w-1/2 space-y-4 pl-12">
         <h2 className="text-xl font-bold text-gray-800">{nomeEvento}</h2>
 

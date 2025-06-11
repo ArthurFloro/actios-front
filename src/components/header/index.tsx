@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CalendarCheck2, Search, Ticket } from "lucide-react";
+import { Heart, Search, Ticket } from "lucide-react";
 import { Logo } from "../logo";
 import { TrocarTema } from "../darkmode/button";
 import { Button } from "../ui/button";
@@ -53,7 +53,7 @@ export function Header() {
             onClick={() => router.push("/usuario/eventos")}
             className="flex cursor-pointer shadow-none border-none text-black dark:text-white hover:text-gray-700 hover:bg-transparent bg-transparent items-center gap-2"
           >
-            <CalendarCheck2 />
+            <Heart />
             <h1>Meus eventos</h1>
           </Button>
         )}

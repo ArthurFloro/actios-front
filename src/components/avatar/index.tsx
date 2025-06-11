@@ -7,6 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import { useRouter } from "next/navigation";
 
 import { User, Clock, Ticket, Heart } from "lucide-react";
 
@@ -17,6 +18,8 @@ interface Props {
 }
 
 export function AvatarComponente({ nomePerfil, src, abreviacao }: Props) {
+  const router = useRouter();
+
   return (
     <button className="cursor-pointer hover:shadow-2xl transition">
       <DropdownMenu>
@@ -30,22 +33,34 @@ export function AvatarComponente({ nomePerfil, src, abreviacao }: Props) {
           <DropdownMenuLabel>{nomePerfil}</DropdownMenuLabel>
           <DropdownMenuSeparator />
 
-          <DropdownMenuItem className="flex cursor-pointer items-center gap-2">
+          <DropdownMenuItem
+            onClick={() => router.push("/usuario/perfil")}
+            className="flex cursor-pointer items-center gap-2"
+          >
             <User className="w-4 h-4" />
             Perfil
           </DropdownMenuItem>
 
-          <DropdownMenuItem className="flex cursor-pointer items-center gap-2">
+          <DropdownMenuItem
+            onClick={() => router.push("/usuario/historico")}
+            className="flex cursor-pointer items-center gap-2"
+          >
             <Clock className="w-4 h-4" />
             Histórico
           </DropdownMenuItem>
 
-          <DropdownMenuItem className="flex cursor-pointer items-center gap-2">
+          <DropdownMenuItem
+            onClick={() => router.push("/usuario/ingressos")}
+            className="flex cursor-pointer items-center gap-2"
+          >
             <Ticket className="w-4 h-4" />
             Ingressos
           </DropdownMenuItem>
 
-          <DropdownMenuItem className="flex cursor-pointer items-center gap-2">
+          <DropdownMenuItem
+            onClick={() => router.push("/usuario/eventos")}
+            className="flex cursor-pointer items-center gap-2"
+          >
             <Heart className="w-4 h-4" />
             Favoritos
           </DropdownMenuItem>

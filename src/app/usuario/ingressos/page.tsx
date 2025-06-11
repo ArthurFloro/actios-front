@@ -6,7 +6,7 @@ export default function UsuarioIngressos() {
     <div className="space-y-6">
       <Header />
       <div className="flex items-center justify-center flex-col w-full">
-        <h1 className="text-3xl">Meus Ingressos</h1>
+        <h1 className="text-2xl font-bold">Meus Ingressos</h1>
       </div>
       <IngressoUsuario />
     </div>

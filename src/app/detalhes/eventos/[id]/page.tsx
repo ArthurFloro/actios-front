@@ -11,16 +11,17 @@ import { CalendarRange, ChevronRight, MapPin } from "lucide-react";
 import { IngressoCard } from "@/components/cards/ingressoCard";
 
 interface PageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default function DetalhesEvento({ params }: PageProps) {
-  const id = Number(params.id);
+export default async function DetalhesEvento({ params }: PageProps) {
+  const { id } = await params;
+
+  const idNum = Number(id);
 
   const allEvents = [...TechEvents, ...CorporativeEvents, ...EducationalEvents];
-  const evento = allEvents.find((event) => event.id === id);
+  const evento = allEvents.find((event) => event.id === idNum);
 
   if (!evento) return notFound();
 
@@ -28,15 +29,12 @@ export default function DetalhesEvento({ params }: PageProps) {
     <div>
       <HeaderDetalhes produtor={evento.nomeEvento} produtorContato="#" />
 
-      {/* Bloco com fundo escuro e imagem borrada ao fundo */}
       <div className="relative p-12 w-full bg-black flex items-center justify-center min-h-[400px] overflow-hidden">
-        {/* Imagem de fundo com blur e opacidade */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40 blur-sm z-0"
           style={{ backgroundImage: `url(${evento.image})` }}
         />
 
-        {/* Conteúdo acima da imagem de fundo */}
         <div className="flex flex-1 relative justify-around items-center z-10">
           <div>
             <h1 className="text-3xl font-bold mb-4 text-white">
@@ -48,7 +46,6 @@ export default function DetalhesEvento({ params }: PageProps) {
               <ChevronRight size={15} />
               {evento.hora}
             </p>
-            <p className="text-white"></p>
             <p className="flex items-center gap-2 text-white">
               <MapPin size={18} />
               {evento.localizacao}
@@ -64,6 +61,7 @@ export default function DetalhesEvento({ params }: PageProps) {
           />
         </div>
       </div>
+
       <div className="p-24 grid bg-[#E7E3DB] grid-cols-2">
         <div className="border shadow rounded-2xl bg-white flex items-center justify-center p-6">
           <div className="flex flex-col gap-4 max-w-[600px]">
