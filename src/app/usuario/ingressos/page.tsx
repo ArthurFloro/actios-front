@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { IngressoUsuario } from "@/components/IngressoUsuario";
+import { Suspense } from "react";
 
 export default function UsuarioIngressos() {
   return (
@@ -8,7 +9,9 @@ export default function UsuarioIngressos() {
       <div className="flex items-center justify-center flex-col w-full">
         <h1 className="text-2xl font-bold">Meus Ingressos</h1>
       </div>
-      <IngressoUsuario />
+      <Suspense fallback={<div>Carregando ingresso...</div>}>
+        <IngressoUsuario />
+      </Suspense>
     </div>
   );
 }
